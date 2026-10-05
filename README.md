@@ -1,5 +1,126 @@
 # 🎓 AI-Based Student Feedback Sentiment Analyzer
+# AI-Based Student Feedback Sentiment Analyzer
 
+## Student & Training Program Details
+
+| **Field** | **Details** |
+|---|---|
+| **Student Name** | Arsheya Pandey |
+| **Registration Number** | 23FE10CDS00358 |
+| **Branch** | B.Tech CSE (Data Science) |
+| **Batch** | F |
+| **Project Title** | AI-Based Student Feedback Sentiment Analyzer |
+| **GitHub Username** | arsheyapandey |
+| **Training Program** | NLP & Generative AI Training Program |
+| **Project Type** | Individual Project |
+| **Domain** | Natural Language Processing (NLP) & Generative AI |
+| **Technology** | Python |
+| **Application Framework** | Streamlit |
+| **LLM Used** | Google Gemini API |
+
+---
+
+## 1. Project Overview
+
+The **AI-Based Student Feedback Sentiment Analyzer** is an NLP and Generative AI-based web application developed to automatically analyze and understand student feedback. The system processes textual feedback provided by students and identifies the overall sentiment, important topics, keywords, positive aspects, negative aspects, and areas that require improvement.
+
+The project combines **traditional Natural Language Processing techniques with Large Language Model (LLM) capabilities** to provide more meaningful and contextual insights from student feedback. Instead of simply classifying feedback as positive or negative, the application attempts to understand what students liked, what problems they faced, and what improvements can be made.
+
+The application provides an interactive **Streamlit-based web interface** through which users can enter individual feedback or upload a CSV file containing multiple student responses.
+
+---
+
+## 2. Objectives
+
+The main objectives of this project are:
+
+- To automatically analyze student feedback using NLP techniques.
+- To classify feedback into **Positive, Negative, Neutral, or Mixed** sentiment.
+- To identify important topics and keywords present in feedback.
+- To extract positive and negative aspects mentioned by students.
+- To use an LLM for contextual understanding of feedback.
+- To generate concise summaries of multiple student responses.
+- To provide AI-generated recommendations for improving courses and teaching.
+- To support analysis of both individual feedback and large CSV datasets.
+- To present the results through an easy-to-use web interface.
+
+---
+
+## 3. Key Features
+
+### Individual Feedback Analysis
+
+Users can enter a single student feedback statement and receive:
+
+- Overall sentiment
+- Sentiment explanation
+- Important keywords
+- Topics identified
+- Positive aspects
+- Negative aspects
+- AI-generated summary
+- Improvement suggestions
+
+### Batch CSV Analysis
+
+The application also supports uploading a CSV file containing multiple student feedback responses.
+
+The system can generate:
+
+- Total number of feedback responses
+- Sentiment distribution
+- Positive/negative/neutral/mixed counts
+- Common topics
+- Frequently occurring keywords
+- Positive aspects
+- Negative aspects
+- Overall feedback summary
+- AI-generated recommendations
+
+### LLM-Based Analysis
+
+The project integrates the **Google Gemini API** to perform contextual analysis of student feedback. The LLM helps understand feedback that may contain multiple opinions, indirect criticism, or mixed sentiments.
+
+For example:
+
+> "The professor teaches very well, but the assignments are difficult and the lab sessions are too short."
+
+The system can identify this as **Mixed Sentiment**, with:
+
+- Positive aspect: Teaching quality
+- Negative aspects: Assignment difficulty and short lab sessions
+- Topics: Teaching, Assignments, Laboratory
+
+---
+
+## 4. NLP Pipeline
+
+The project follows a structured NLP pipeline:
+
+```text
+Student Feedback
+       ↓
+Text Cleaning
+       ↓
+Lowercasing
+       ↓
+Tokenization
+       ↓
+Stop-word Removal
+       ↓
+Lemmatization
+       ↓
+Feature Extraction
+       ↓
+Sentiment Analysis
+       ↓
+Topic & Keyword Extraction
+       ↓
+LLM-Based Contextual Analysis
+       ↓
+Summary & Recommendations
+       ↓
+Final Results
 ## Problem Statement
 Educational institutions collect vast amounts of student feedback, but manually analyzing it is time-consuming and subjective. Basic sentiment analysis often fails to capture context or identify sentiment for specific aspects (e.g., teaching vs. assignments). 
 
@@ -50,33 +171,6 @@ Student-Feedback-Sentiment-Analyzer/
 │   └── sample_feedback.csv    # Sample data
 └── tests/
     └── test_analyzer.py       # Unit tests
-```
-
-## Installation Instructions
-
-1. **Clone or Download the repository.**
-2. **Create a virtual environment (optional but recommended):**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate # On Windows: venv\Scripts\activate
-   ```
-3. **Install Dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## API Key Setup
-1. Get a free API key from [Google AI Studio](https://aistudio.google.com/).
-2. Copy `.env.example` to `.env`:
-   ```bash
-   cp .env.example .env
-   ```
-3. Edit `.env` and add your key:
-   `GEMINI_API_KEY=your_actual_key_here`
-
-## How to Run
-```bash
-streamlit run app.py
 ```
 
 ## Example Output
