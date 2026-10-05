@@ -8,7 +8,7 @@
 | **Student Name** | Arsheya Pandey |
 | **Registration Number** | 23FE10CDS00358 |
 | **Branch** | B.Tech CSE (Data Science) |
-| **Batch** | F |
+| **Batch** | E |
 | **Project Title** | AI-Based Student Feedback Sentiment Analyzer |
 | **GitHub Username** | arsheyapandey |
 | **Training Program** | NLP & Generative AI Training Program |
